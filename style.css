@@ -1,0 +1,89 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 600px;
+    background-image: url("https://wp.pt.aleteia.org/wp-content/uploads/sites/5/2018/07/woman-687560_960_720.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffeeff;
+    margin-top: 16px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 50%;
+  }
+  
+  .alura-logo:hover {
+    opacity: 100%;
+    width: 75px;
+  }
+  
+  @media (max-height: 500px) {
+    body {
+      min-height: 800px;
+    }
+  }
+  
+  input {
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 4px;
+    border-color: transparent;
+  }
+  
+  button {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border-color: transparent;
+    background: #ffffff;
+    color: #263238;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    width: 105px;
+    background-color: #c48b9f;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .resultado {
+    width: 60%;
+    margin: auto;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
