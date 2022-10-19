@@ -1,4 +1,3 @@
-@media screen and (max-width: 480px) {
 body {
     font-family: "Roboto Mono", monospace;
     min-height: 755px;
@@ -45,7 +44,7 @@ body {
   
   @media (max-height: 500px) {
     body {
-      min-height: 800px;
+      min-height: 500px;
     }
   }
 
@@ -160,4 +159,3 @@ body {
     border-radius: 8px;
     transition: 3s;
   }
-}
