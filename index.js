@@ -1,38 +1,47 @@
-var numeroSecreto = parseInt(Math.random() * 21);
-var numeroTentativas = 3;
+let numeroSecreto = parseInt(Math.random() * 21);
+let numeroTentativas = 4;
 
 function Chutar() {
-  var resultado = document.getElementById("resultado");
-  var tentativas = document.getElementById("tentativas");
-  var chute = parseInt(document.getElementById("valor").value);
-
+  let resultado = document.getElementById("resultado");
+  let tentativas = document.getElementById("tentativas");
+  let chute = parseInt(document.getElementById("valor").value);
+  
   if (numeroTentativas > 0) {
     if (chute == numeroSecreto) {
       resultado.innerHTML = "Parabéns!! Você acertou.";
       numeroTentativas === 0;
       tentativas.innerHTML = "Recarregue a página para jogar novamente.";
     } else if (chute > 20 || chute < 0) {
-      resultado.innerHTML = "Número inválido. Digite um número entre 0 e 10.";
+      resultado.innerHTML = "Número inválido. Digite um número entre 0 e 20.";
     } else {
       numeroTentativas--;
       tentativas.innerHTML =
-        "Você tem " + numeroTentativas + " tentativas restante.";
+      "Você tem " + numeroTentativas + " tentativas restante.";
       if (numeroSecreto < chute) {
         resultado.innerHTML =
-          "Ops! Você errou. O número secreto é menor do que " + chute;
+        "Ops! Você errou. O número secreto é menor do que " + chute;
       } else if (numeroSecreto > chute) {
         resultado.innerHTML =
-          "Parece que você errou. O número secreto é maior do que " + chute;
+        "Parece que você errou. O número secreto é maior do que " + chute;
       }
     }
   }
   if (numeroTentativas === 0) {
     resultado.innerHTML = "Você perdeu. O numero secreto era " + numeroSecreto;
     tentativas.innerHTML =
-      "Você esgotou suas tentativas. Recarregue a página para jogar novamente.";
-  }
+    "Você esgotou suas tentativas. Recarregue a página para jogar novamente.";
+  } 
 }
 
+
+
+/*
+let delet = document.getElementById("delete");
+let aviso = document.getElementById("aviso");
+if(chute == chute) { 
+aviso.innerHTML = `Você não pode usar novamente o número ${chute}.`
+  }  
+*/
 // if (chute > 15 || chute < 0) {
 //   elementoResultado.innerHTML = "Você deve digitar um numero de 0 a 15";
 
