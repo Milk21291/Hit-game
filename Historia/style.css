@@ -16,3 +16,9 @@ h1 {
 img {
     margin-left: 4.5%;
 }
+
+@media (max-height: 500px) {
+    body {
+      min-height: 800px;
+    }
+  }
