@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto Mono", monospace;
-    min-height: 700px;
+    min-height: 755px;
     background-image: url("https://images.pexels.com/photos/2157191/pexels-photo-2157191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-color: black;
     background-size: cover;
@@ -45,7 +45,7 @@ body {
   }
   
   
-  @media (max-height: 500px) {
+  @media (max-height: 520px) {
     body {
       min-height: 800px;
     }
