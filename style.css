@@ -45,7 +45,7 @@ body {
   }
   
   
-  @media (max-height: 520px) {
+  @media (max-height: 500px) {
     body {
       min-height: 800px;
     }
