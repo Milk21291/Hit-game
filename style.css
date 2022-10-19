@@ -13,6 +13,10 @@ body {
     padding: 20px;
     height: 100vh;
   }
+
+  .container2 {
+    text-align: left;
+  }
   
   .page-title {
     transition: 3s;
@@ -23,6 +27,21 @@ body {
   .page-subtitle {
     color: #ffeeff;
     margin-top: 16px;
+  }
+
+  .linkHtml {
+    text-align: center;
+    color: #ffffff;
+    margin-left: 100px;
+    margin-right: 80px;
+    transition: 3s;
+  }
+
+  .linkHtml:hover {
+    color: #ff0000;
+    margin-left: 100px;
+    margin-right: 80px;
+    transition: 3s;
   }
   
   
@@ -142,4 +161,3 @@ body {
     border-radius: 8px;
     transition: 3s;
   }
-  
