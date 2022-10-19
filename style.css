@@ -105,6 +105,7 @@ body {
     transition: 0.4s;
   }
   
+  @media (max-height: 500px) {
   .resultado {
     width: 40%;
     margin: auto;
@@ -158,3 +159,4 @@ body {
     border-radius: 8px;
     transition: 3s;
   }
+}
