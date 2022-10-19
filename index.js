@@ -27,7 +27,7 @@ function Chutar() {
     }
   }
   if (numeroTentativas === 0) {
-    resultado.innerHTML = "Você perdeu. O numero secreto era " + numeroSecreto;
+    resultado.innerHTML = "Você perdeu. O número secreto era " + numeroSecreto;
     tentativas.innerHTML =
     "Você esgotou suas tentativas. Recarregue a página para jogar novamente.";
   } 
