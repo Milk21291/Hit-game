@@ -26,9 +26,9 @@ body {
   }
   
   
-  @media (max-height: 700px) {
+  @media (max-height: 400px) {
     body {
-      min-height: 900px;
+      min-height: 700px;
     }
   }
 
