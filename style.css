@@ -1,3 +1,4 @@
+@media screen and (max-width: 480px) {
 body {
     font-family: "Roboto Mono", monospace;
     min-height: 755px;
@@ -159,3 +160,4 @@ body {
     border-radius: 8px;
     transition: 3s;
   }
+}
