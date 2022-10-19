@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto Mono", monospace;
     min-height: 755px;
-    background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://images.pexels.com/photos/5691695/pexels-photo-5691695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-color: black;
     background-size: cover;
     background-position: center bottom;
@@ -14,7 +14,10 @@ h1 {
 }
 
 img {
-    margin-left: 4.5%;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
 }
 
 @media (max-height: 500px) {
