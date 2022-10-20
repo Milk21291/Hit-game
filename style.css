@@ -59,7 +59,7 @@ body {
   
   input {
     width: 200px;
-    height: 30px;
+    height: 18px;
     font-size: 25px;
     margin: 4px;
     padding: 6px;
@@ -71,7 +71,7 @@ body {
   input:hover {
     border-radius: 8px;
     width: 200px;
-    height: 30px;
+    height: 18px;
     font-size: 25px;
     margin: 4px;
     padding: 6px;
