@@ -51,9 +51,17 @@ body {
   @media (max-height: 500px) {
     body {
       min-height: 800px;
+      font-family: "Roboto Mono", monospace;
+      min-height: 755px;
+      background-image: url("img/pexels-martin-lopez-2157191.jpg");
+      background-color: black;
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
     }
+
     .tentativas {
-      width: 20%;
+      width: 60%;
       margin: auto;
       color: black;
       text-align: center;
@@ -63,7 +71,7 @@ body {
       transition: 3s;
     }
     .resultado:hover {
-      width: 20%;
+      width: 60%;
       margin: auto;
       color: rgb(255, 255, 255);
       text-align: center;
