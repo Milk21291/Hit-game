@@ -152,7 +152,7 @@ body {
   }
 
   .tentativas {
-    width: 45%;
+    width: 40%;
     margin: auto;
     color: black;
     text-align: center;
@@ -184,7 +184,7 @@ body {
   }
 
   .tentativas:hover {
-    width: 45%;
+    width: 40%;
     margin: auto;
     color: rgb(255, 255, 255);
     text-align: center;
