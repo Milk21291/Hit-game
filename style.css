@@ -28,7 +28,7 @@ body {
   .linkHtml {
     text-align: center;
     color: #ffffff;
-    margin-top: -100px;
+    margin-top: auto;
     margin-left: 100px;
     margin-right: 80px;
     transition: 3s;
@@ -59,7 +59,7 @@ body {
   
   input {
     width: 200px;
-    height: 18px;
+    height: 30px;
     font-size: 25px;
     margin: 4px;
     padding: 6px;
