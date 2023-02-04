@@ -6,7 +6,7 @@ function Chutar() {
   let tentativas = document.getElementById("tentativas");
   let chute = parseInt(document.getElementById("valor").value);
   
-  if (numeroTentativas > 1) {
+  if (numeroTentativas > 0) {
     if (chute == numeroSecreto) {
       resultado.innerHTML = "Parabéns!! Você acertou.";
       numeroTentativas === 1;
