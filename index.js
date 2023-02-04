@@ -1,4 +1,4 @@
-let numeroSecreto = parseInt(Math.random() * 21);
+let numeroSecreto = parseInt(Math.random() * 20) + 1;
 let numeroTentativas = 4;
 
 function Chutar() {
@@ -6,13 +6,13 @@ function Chutar() {
   let tentativas = document.getElementById("tentativas");
   let chute = parseInt(document.getElementById("valor").value);
   
-  if (numeroTentativas > 0) {
+  if (numeroTentativas > 1) {
     if (chute == numeroSecreto) {
       resultado.innerHTML = "Parabéns!! Você acertou.";
-      numeroTentativas === 0;
+      numeroTentativas === 1;
       tentativas.innerHTML = "Recarregue a página para jogar novamente.";
-    } else if (chute > 20 || chute < 0) {
-      resultado.innerHTML = "Número inválido. Digite um número entre 0 e 20.";
+    } else if (chute > 20 || chute < 1) {
+      resultado.innerHTML = "Número inválido. Digite um número entre 1 e 20.";
     } else {
       numeroTentativas--;
       tentativas.innerHTML =
