@@ -1,0 +1,39 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 632px;
+    background-image: url("https://images.pexels.com/photos/5691695/pexels-photo-5691695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-color: black;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+}
+
+#historiaText {
+    color: #909090;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h3 {
+    color: #909090;
+    font-size: 1.2rem;
+    margin-top: 240px;
+}
+
+@media (max-height: 500px) {
+    body {
+      min-height: 800px;
+    }
+  }
