@@ -1,7 +1,6 @@
 let numeroSecreto = gerarNumeroSecreto();
 let numeroTentativas = 20;
 let faseAtual = 1;
-console.log(numeroSecreto)
 
 function gerarNumeroSecreto() {
     return parseInt(Math.random() * 20) + 1;
