@@ -1,7 +1,7 @@
 (function() {
   let numeroSecreto = gerarNumeroSecreto();
   let numeroTentativas = 20;
-  let faseAtual = 7;
+  let faseAtual = 1;
 
   function gerarNumeroSecreto() {
       return parseInt(Math.random() * 20) + 1;
@@ -51,6 +51,5 @@
           numeroSecreto = gerarNumeroSecreto();
       }
   }
-
 })();
 
