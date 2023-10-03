@@ -1,17 +1,16 @@
 (function () {
     let faseAtual = 1;
     const tentativasBase = 20;
-    let decrementoTentativas = 0;
     let numeroTentativas = tentativasBase;
-    let teste = 0;
+    let numerosAtuais = 0;
 
     function gerarNumeroSecreto() {
         return parseInt(Math.random() * (18 + faseAtual * 2)) + 1;
     }
 
     function calcularTentativasIniciais() {
-        teste += 2;
-        return tentativasBase - teste;
+        numerosAtuais += 2;
+        return tentativasBase - numerosAtuais;
     }
 
     function atualizarTextoFaseNumeros() {
@@ -64,7 +63,7 @@
             resultado.innerHTML = "Você perdeu. O número secreto era " + numeroSecreto;
             tentativas.innerHTML = "Você esgotou suas tentativas. Recarregue a página para começar novamente.";
             faseAtual = 1;
-            teste = 0;
+            numerosAtuais = 0;
             numeroTentativas = tentativasBase;
             numeroSecreto = gerarNumeroSecreto();
             atualizarTextoFaseNumeros();
