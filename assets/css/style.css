@@ -129,6 +129,7 @@ button:hover {
   body {
       background-image: url("img/pexels-martin-lopez-2157191.jpg");
       min-height: 755px;
+      background-repeat: 0;
   }
 
   .tentativas {
