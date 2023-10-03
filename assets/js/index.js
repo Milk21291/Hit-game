@@ -3,6 +3,7 @@
     const tentativasBase = 20;
     let numeroTentativas = tentativasBase;
     let numerosAtuais = 0;
+    let chutesAnteriores = []; 
 
     function gerarNumeroSecreto() {
         return parseInt(Math.random() * (18 + faseAtual * 2)) + 1;
@@ -34,6 +35,13 @@
             return;
         }
 
+        if (chutesAnteriores.includes(chute)) {
+            resultado.innerHTML = "Esse número já foi chutado. Escolha outro.";
+            return;
+        } else {
+            chutesAnteriores.push(chute);
+        }
+
         if (numeroTentativas > 0) {
             if (chute == numeroSecreto) {
                 if (faseAtual === 7) {
@@ -46,6 +54,7 @@
                 numeroSecreto = gerarNumeroSecreto();
                 atualizarTextoFaseNumeros();
                 resultado.innerHTML = `Parabéns!! Você acertou. Você está na Fase ${faseAtual}, escolha um número entre 1 e ${18 + faseAtual * 2}.`;
+                chutesAnteriores = [];
             } else if (chute > 18 + faseAtual * 2 || chute < 1) {
                 resultado.innerHTML = `Número inválido. Digite um número entre 1 e ${18 + faseAtual * 2}.`;
             } else {
@@ -67,6 +76,7 @@
             numeroTentativas = tentativasBase;
             numeroSecreto = gerarNumeroSecreto();
             atualizarTextoFaseNumeros();
+            chutesAnteriores = []; 
         }
     }
 })();
